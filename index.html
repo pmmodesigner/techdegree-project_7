@@ -1,0 +1,277 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="_css/styles.css">
+</head>
+
+<body class="grid-container">
+
+  <header class="header-container">
+
+    <h1>YourApp</h1>
+    <div class="">
+      <svg>
+
+      </svg>
+      <div id="notifications">
+
+      </div>
+    </div>
+    <img src="" alt="">
+    <h4>Name Surname</h4>
+
+  </header>
+
+
+  <nav class="nav-container">
+
+    <a>
+      <img src="" alt="">
+    </a>
+
+  </nav>
+
+
+  <main>
+
+    <div class="main-header">
+      <h2 class="page-title">Dashboard</h2>
+      <div class="main-header-search">
+        <input type="search" placeholder="Search..." />
+      </div>
+    </div>
+
+    <!-- Alert banner -->
+    <div class="alert" id="alert">
+      <!-- JS will appear here -->
+    </div>
+
+    <!-- Line graph chart -->
+    <section class="traffic">
+      <div class="traffic-header">
+        <h3>Traffic</h3>
+        <ul>
+          <li class="traffic-nav-link">Hourly</li>
+          <li class="traffic-nav-link">Daily</li>
+          <li class="traffic-nav-link">Weekly</li>
+          <li class="traffic-nav-link">Monthly</li>
+        </ul>
+      </div>
+      <div class="widget-container-full">
+        <!-- Element line graph will attach here -->
+        <canvas id="traffic-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- Bar chart -->
+    <section class="daily">
+      <h3>Daily Traffic</h3>
+      <div class="widget-container-half">
+        <!-- Element bar graphic will attach here -->
+        <canvas id="daily-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- Donut chart -->
+    <section class="mobile">
+      <h3>Mobile Users</h3>
+      <div class="widget-container-half">
+        <!-- Element bar graphic will attach here -->
+        <canvas id="mobile-chart"></canvas>
+      </div>
+    </section>
+
+    <div class="social-container">
+      <div class="social-image">
+        <img src="_images/icons/icon-twitter.svg" alt="Twitter icon" width="50px" height="50px">
+      </div>
+      <div class="social-text">
+        <p>Twitter</p>
+        <p>10,345</p>
+      </div>
+      <div class="social-image">
+        <img src="_images/icons/icon-facebook.svg" alt="Facebook icon" width="50px" height="50px">
+      </div>
+      <div class="social-text">
+        <p>Facebook</p>
+        <p>8,739</p>
+      </div>
+      <div class="social-image">
+        <img src="_images/icons/icon-google-plus.svg" alt="Google Plus icon" width="50px" height="50px">
+      </div>
+      <div class="social-text">
+        <p>Google+</p>
+        <p>2,530</p>
+      </div>
+
+      <!-- New members widget -->
+      <section class="members">
+        <h3>New Members</h3>
+
+        <div class="members-container">
+
+          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
+          <div class="members-text">
+            <p>Victoria Chambers</p>
+            <a href="#">victoria.chambers80@example.com</a>
+          </div>
+          <p>15/09/2020</p>
+
+          <div class="members-container">
+            <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+            <div class="members-text">
+              <p>Jeff Meyer</p>
+              <a href="#">jmeyer@blueprint.com</a>
+          </div>
+          <p>12/09/2020</p>
+
+          <div class="members-container">
+            <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+            <div class="members-text">
+              <p>Quisla Kauser</p>
+              <a href="#">skiquis@cox.net</a>
+          </div>
+          <p>11/09/2020</p>
+
+          <div class="members-container">
+            <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+            <div class="members-text">
+              <p>Matt Draft</p>
+              <a href="#">drafmatt@fsu.edu</a>
+          </div>
+          <p>11/09/2020</p>
+
+        </div>
+      </section>
+
+      <!-- New members widget -->
+      <section class="members">
+        <h3>New Members</h3>
+
+        <div class="members-container">
+          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
+          <div class="members-text">
+            <p>Victoria Chambers</p>
+            <a href="#">victoria.chambers80@example.com</a>
+          </div>
+          <p>15/09/2020</p>
+        </div>
+
+          <div class="members-container">
+            <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+            <div class="members-text">
+              <p>Jeff Meyer</p>
+              <a href="#">jmeyer@blueprint.com</a>
+            </div>
+            <p>12/09/2020</p>
+          </div>
+
+          <div class="members-container">
+            <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+            <div class="members-text">
+              <p>Quisla Kauser</p>
+              <a href="#">skiquis@cox.net</a>
+            </div>
+            <p>11/09/2020</p>
+          </div>
+
+          <div class="members-container">
+            <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+            <div class="members-text">
+              <p>Matt Draft</p>
+              <a href="#">drafmatt@fsu.edu</a>
+            </div>
+            <p>11/09/2020</p>
+          </div>
+
+
+
+      <!-- Messaging widget -->
+
+      <section class="message">
+
+        <h3>Message User</h3>
+
+        <form class="widget-container">
+          <input type="text" class="form-field" id="userField" placeholder="Search for user...">
+          <textarea class="form-area" id="messageField" placeholder="Message for user..."></textarea>
+          <button class="button-message-send" id="send">Send</button>
+        </form>
+
+      </section>
+
+
+
+      <!-- Recent activity widget -->
+
+      <section class="activity">
+
+        <h3>Recent Activity</h3>
+
+        <div class="members-container">
+          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
+          <div class="recent-activity-item">
+            <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+            <p>4 hours ago</p>
+          </div>
+        </div>
+
+        <div class="members-container">
+          <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+          <div class="recent-activity-item">
+            <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
+            <p>5 hours ago</p>
+          </div>
+        </div>
+
+        <div class="members-container">
+          <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+          <div class="recent-activity-item">
+            <p>Dawn Wood commented on Facebook's Changes for 2016</p>
+            <p>5 hours ago</p>
+          </div>
+        </div>
+
+        <div class="members-container">
+          <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+          <div class="recent-activity-item">
+            <p>Dan Oliver posted YourApp's SEO Tips</p>
+            <p>1 day ago</p>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      ​<!-- local settings widget -->
+
+      ​<section class=​"settings"​>
+
+        ​<h3>​Settings​</h3>
+
+        ​<!-- custom CSS toggle code-->
+        <!-- custom CSS toggle code-->
+
+        ​<select​ class=​"form-field"​ id=​"timezone"​>
+          ​<option​ disabled selected>​Select a Timezone​</​option>​ ​<​option​>​Eastern​</​option​>
+        ​</select>
+
+        ​<!-- more options -->
+
+        ​<div class=​"settings-button"​ >
+          ​<button​ class=​"button-primary"​ id=​"save"​>​Save​</button​>
+          ​<button​ class=​"button-disabled"​ id=​"cancel"​>​Cancel​</​button​>
+        </div>
+
+      ​</section>
+
+
+  </main>
+
+
+
+  <script type="text/javascript" src="_js/scripts.js"></script>
+
+</body>
+
+</html>
