@@ -1,149 +1,145 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="_css/styles.css">
-</head>
+<!DOCTYPE html>
 
-<body class="grid-container">
+<html lang="en">
 
-  <header class="header-container">
+  <head>
+    <link rel="stylesheet" type="text/css" href="_css/styles.css">
+    <title>WebApp Dashboard</title>
+  </head>
 
-    <h1>YourApp</h1>
-    <div class="">
-      <svg>
 
-      </svg>
-      <div id="notifications">
+  <body class="grid-container">
 
+    <header class="header-container">
+
+      <h1>YourApp</h1>
+      <div class="">
+        <svg>
+
+        </svg>
+        <div id="notifications">
+
+        </div>
       </div>
-    </div>
-    <img src="" alt="">
-    <h4>Name Surname</h4>
-
-  </header>
-
-
-  <nav class="nav-container">
-
-    <a>
       <img src="" alt="">
-    </a>
+      <h4>Name Surname</h4>
 
-  </nav>
+    </header>
 
 
-  <main>
+    <nav class="nav-container">
 
-    <div class="main-header">
-      <h2 class="page-title">Dashboard</h2>
-      <div class="main-header-search">
-        <input type="search" placeholder="Search..." />
-      </div>
-    </div>
+      <a>
+        <img src="" alt="">
+      </a>
 
-    <!-- Alert banner -->
-    <div class="alert" id="alert">
-      <!-- JS will appear here -->
-    </div>
+    </nav>
 
-    <!-- Line graph chart -->
-    <section class="traffic">
-      <div class="traffic-header">
-        <h3>Traffic</h3>
-        <ul>
-          <li class="traffic-nav-link">Hourly</li>
-          <li class="traffic-nav-link">Daily</li>
-          <li class="traffic-nav-link">Weekly</li>
-          <li class="traffic-nav-link">Monthly</li>
-        </ul>
-      </div>
-      <div class="widget-container-full">
-        <!-- Element line graph will attach here -->
-        <canvas id="traffic-chart"></canvas>
-      </div>
-    </section>
 
-    <!-- Bar chart -->
-    <section class="daily">
-      <h3>Daily Traffic</h3>
-      <div class="widget-container-half">
-        <!-- Element bar graphic will attach here -->
-        <canvas id="daily-chart"></canvas>
-      </div>
-    </section>
+    <main>
 
-    <!-- Donut chart -->
-    <section class="mobile">
-      <h3>Mobile Users</h3>
-      <div class="widget-container-half">
-        <!-- Element bar graphic will attach here -->
-        <canvas id="mobile-chart"></canvas>
-      </div>
-    </section>
+      <!-- Site header -->
 
-    <div class="social-container">
-      <div class="social-image">
-        <img src="_images/icons/icon-twitter.svg" alt="Twitter icon" width="50px" height="50px">
-      </div>
-      <div class="social-text">
-        <p>Twitter</p>
-        <p>10,345</p>
-      </div>
-      <div class="social-image">
-        <img src="_images/icons/icon-facebook.svg" alt="Facebook icon" width="50px" height="50px">
-      </div>
-      <div class="social-text">
-        <p>Facebook</p>
-        <p>8,739</p>
-      </div>
-      <div class="social-image">
-        <img src="_images/icons/icon-google-plus.svg" alt="Google Plus icon" width="50px" height="50px">
-      </div>
-      <div class="social-text">
-        <p>Google+</p>
-        <p>2,530</p>
+      <div class="main-header">
+
+        <h2 class="page-title">Dashboard</h2>
+        <div class="main-header-search">
+          <input type="search" placeholder="Search..." />
+        </div>
+
       </div>
 
-      <!-- New members widget -->
-      <section class="members">
-        <h3>New Members</h3>
 
-        <div class="members-container">
 
-          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
-          <div class="members-text">
-            <p>Victoria Chambers</p>
-            <a href="#">victoria.chambers80@example.com</a>
-          </div>
-          <p>15/09/2020</p>
+      <!-- Alert banner -->
 
-          <div class="members-container">
-            <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
-            <div class="members-text">
-              <p>Jeff Meyer</p>
-              <a href="#">jmeyer@blueprint.com</a>
-          </div>
-          <p>12/09/2020</p>
+      <div class="alert" id="alert">
+        <!-- JS will appear here -->
+      </div>
 
-          <div class="members-container">
-            <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
-            <div class="members-text">
-              <p>Quisla Kauser</p>
-              <a href="#">skiquis@cox.net</a>
-          </div>
-          <p>11/09/2020</p>
 
-          <div class="members-container">
-            <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
-            <div class="members-text">
-              <p>Matt Draft</p>
-              <a href="#">drafmatt@fsu.edu</a>
-          </div>
-          <p>11/09/2020</p>
 
+      <!-- Line graph chart -->
+
+      <section class="traffic">
+        <div class="traffic-header">
+          <h3>Traffic</h3>
+          <ul>
+            <li class="traffic-nav-link">Hourly</li>
+            <li class="traffic-nav-link">Daily</li>
+            <li class="traffic-nav-link">Weekly</li>
+            <li class="traffic-nav-link">Monthly</li>
+          </ul>
+        </div>
+        <div class="widget-container-full">
+          <!-- Element line graph will attach here -->
+          <canvas id="traffic-chart"></canvas>
+        </div>
+
+      </section>
+
+
+
+      <!-- Bar chart -->
+
+      <section class="daily">
+
+        <h3>Daily Traffic</h3>
+        <div class="widget-container-half">
+          <!-- Element bar graphic will attach here -->
+          <canvas id="daily-chart"></canvas>
+        </div>
+
+      </section>
+
+
+
+      <!-- Donut chart -->
+
+      <section class="mobile">
+        <h3>Mobile Users</h3>
+        <div class="widget-container-half">
+          <!-- Element bar graphic will attach here -->
+          <canvas id="mobile-chart"></canvas>
         </div>
       </section>
 
+
+
+      <!-- Social stats -->
+
+      <section class="social-container">
+
+        <div class="social-image">
+          <img src="_images/icons/icon-twitter.svg" alt="Twitter icon" width="50" height="50">
+        </div>
+        <div class="social-text">
+          <p>Twitter</p>
+          <p>10,345</p>
+        </div>
+
+        <div class="social-image">
+          <img src="_images/icons/icon-facebook.svg" alt="Facebook icon" width="50" height="50">
+        </div>
+        <div class="social-text">
+          <p>Facebook</p>
+          <p>8,739</p>
+        </div>
+
+        <div class="social-image">
+          <img src="_images/icons/icon-google-plus.svg" alt="Google Plus icon" width="50" height="50">
+        </div>
+        <div class="social-text">
+          <p>Google+</p>
+          <p>2,530</p>
+        </div>
+
+      </section>
+
+
+
       <!-- New members widget -->
+
       <section class="members">
         <h3>New Members</h3>
 
@@ -153,35 +149,37 @@
             <p>Victoria Chambers</p>
             <a href="#">victoria.chambers80@example.com</a>
           </div>
-          <p>15/09/2020</p>
         </div>
+        <p>15/09/2020</p>
 
-          <div class="members-container">
-            <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
-            <div class="members-text">
-              <p>Jeff Meyer</p>
-              <a href="#">jmeyer@blueprint.com</a>
-            </div>
-            <p>12/09/2020</p>
+        <div class="members-container">
+          <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+          <div class="members-text">
+            <p>Jeff Meyer</p>
+            <a href="#">jmeyer@blueprint.com</a>
           </div>
+        </div>
+        <p>12/09/2020</p>
 
-          <div class="members-container">
-            <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
-            <div class="members-text">
-              <p>Quisla Kauser</p>
-              <a href="#">skiquis@cox.net</a>
-            </div>
-            <p>11/09/2020</p>
+        <div class="members-container">
+          <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+          <div class="members-text">
+            <p>Quisla Kauser</p>
+            <a href="#">skiquis@cox.net</a>
           </div>
+        </div>
+        <p>11/09/2020</p>
 
-          <div class="members-container">
-            <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
-            <div class="members-text">
-              <p>Matt Draft</p>
-              <a href="#">drafmatt@fsu.edu</a>
-            </div>
-            <p>11/09/2020</p>
+        <div class="members-container">
+          <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+          <div class="members-text">
+            <p>Matt Draft</p>
+            <a href="#">drafmatt@fsu.edu</a>
           </div>
+        </div>
+        <p>11/09/2020</p>
+
+      </section>
 
 
 
@@ -245,33 +243,72 @@
 
       ​<!-- local settings widget -->
 
-      ​<section class=​"settings"​>
+      ​<section class="settings">
 
         ​<h3>​Settings​</h3>
 
         ​<!-- custom CSS toggle code-->
         <!-- custom CSS toggle code-->
 
-        ​<select​ class=​"form-field"​ id=​"timezone"​>
-          ​<option​ disabled selected>​Select a Timezone​</​option>​ ​<​option​>​Eastern​</​option​>
-        ​</select>
+      ​  <select class="setting-select" id="select" value="-10:00">
+          <option disabled selected>-- Select Timezone --</option>
+          <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+          <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+          <option value="-10:00">(GMT -10:00) Hawaii</option>
+          <option value="-09:50">(GMT -9:30) Taiohae</option>
+          <option value="-09:00">(GMT -9:00) Alaska</option>
+          <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+          <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+          <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+          <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+          <option value="-04:50">(GMT -4:30) Caracas</option>
+          <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+          <option value="-03:50">(GMT -3:30) Newfoundland</option>
+          <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+          <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+          <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+          <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+          <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+          <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+          <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+          <option value="+03:50">(GMT +3:30) Tehran</option>
+          <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+          <option value="+04:50">(GMT +4:30) Kabul</option>
+          <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+          <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+          <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+          <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+          <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+          <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+          <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+          <option value="+08:75">(GMT +8:45) Eucla</option>
+          <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+          <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+          <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+          <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+          <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+          <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+          <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+          <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+          <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+          <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+        </select>
 
         ​<!-- more options -->
 
-        ​<div class=​"settings-button"​ >
-          ​<button​ class=​"button-primary"​ id=​"save"​>​Save​</button​>
-          ​<button​ class=​"button-disabled"​ id=​"cancel"​>​Cancel​</​button​>
+        ​<div class="settings-button">
+          <button class="button-primary" id="save">Save</button>
+          <button class="button-disabled" id="cancel">Cancel</button>
         </div>
 
-      ​</section>
-
-
-  </main>
+      </section>
 
 
 
-  <script type="text/javascript" src="_js/scripts.js"></script>
+    </main>
 
-</body>
+    <script src="_js/scripts.js"></script>
+
+  </body>
 
 </html>
