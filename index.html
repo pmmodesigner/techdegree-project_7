@@ -3,7 +3,10 @@
 <html lang="en">
 
   <head>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="_css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <title>WebApp Dashboard</title>
   </head>
 
@@ -12,26 +15,26 @@
 
     <header class="header-container">
 
-      <h1>YourApp</h1>
-      <div class="">
-        <svg>
-
-        </svg>
+      <img src="_images/your_app_logo.svg" alt="YourApp logo" class="app-logo">
+      <div class="spacer"></div>
+      <div class="notification-bell">
+        <img src="_images/icon-bell.svg" alt="Notifications icon" class="noti-bell-icon">
         <div id="notifications">
-
         </div>
       </div>
-      <img src="" alt="">
-      <h4>Name Surname</h4>
+      <div class="vertical-separator"></div>
+      <img src="_images/member-0.jpg" alt="Your user profile photo" class="profile-photo">
+      <h4 class="user-name">Pedro Manuel</h4>
 
     </header>
 
 
     <nav class="nav-container">
 
-      <a>
-        <img src="" alt="">
-      </a>
+      <a><img src="_images/icon-dashboard.svg" alt="Dashboard"></a>
+      <a><img src="_images/icon-members.svg" alt="Members"></a>
+      <a><img src="_images/icon-visits.svg" alt="Visits"></a>
+      <a><img src="_images/icon-settings.svg" alt="Settings"></a>
 
     </nav>
 
@@ -64,7 +67,7 @@
       <section class="traffic">
         <div class="traffic-header">
           <h3>Traffic</h3>
-          <ul>
+          <ul class="traffic-nav">
             <li class="traffic-nav-link">Hourly</li>
             <li class="traffic-nav-link">Daily</li>
             <li class="traffic-nav-link">Weekly</li>
@@ -111,7 +114,7 @@
       <section class="social-container">
 
         <div class="social-image">
-          <img src="_images/icons/icon-twitter.svg" alt="Twitter icon" width="50" height="50">
+          <img src="_images/icon-twitter.svg" alt="Twitter icon" width="50" height="50">
         </div>
         <div class="social-text">
           <p>Twitter</p>
@@ -119,7 +122,7 @@
         </div>
 
         <div class="social-image">
-          <img src="_images/icons/icon-facebook.svg" alt="Facebook icon" width="50" height="50">
+          <img src="_images/icon-facebook.svg" alt="Facebook icon" width="50" height="50">
         </div>
         <div class="social-text">
           <p>Facebook</p>
@@ -127,7 +130,7 @@
         </div>
 
         <div class="social-image">
-          <img src="_images/icons/icon-google-plus.svg" alt="Google Plus icon" width="50" height="50">
+          <img src="_images/icon-google-plus.svg" alt="Google Plus icon" width="50" height="50">
         </div>
         <div class="social-text">
           <p>Google+</p>
@@ -144,40 +147,40 @@
         <h3>New Members</h3>
 
         <div class="members-container">
-          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
+          <img src="_images/member-1.jpg" alt="Member 1 profile photo">
           <div class="members-text">
             <p>Victoria Chambers</p>
             <a href="#">victoria.chambers80@example.com</a>
           </div>
+          <p>15/09/2020</p>
         </div>
-        <p>15/09/2020</p>
 
         <div class="members-container">
-          <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+          <img src="_images/member-2.jpg" alt="Member 2 profile photo">
           <div class="members-text">
             <p>Jeff Meyer</p>
             <a href="#">jmeyer@blueprint.com</a>
           </div>
+          <p>12/09/2020</p>
         </div>
-        <p>12/09/2020</p>
 
         <div class="members-container">
-          <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+          <img src="_images/member-3.jpg" alt="Member 3 profile photo">
           <div class="members-text">
             <p>Quisla Kauser</p>
             <a href="#">skiquis@cox.net</a>
           </div>
-        </div>
         <p>11/09/2020</p>
+        </div>
 
         <div class="members-container">
-          <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+          <img src="_images/member-4.jpg" alt="Member 4 profile photo">
           <div class="members-text">
             <p>Matt Draft</p>
             <a href="#">drafmatt@fsu.edu</a>
           </div>
+          <p>11/09/2020</p>
         </div>
-        <p>11/09/2020</p>
 
       </section>
 
@@ -206,7 +209,7 @@
         <h3>Recent Activity</h3>
 
         <div class="members-container">
-          <img src="_images/images/member-1.jpg" alt="Member 1 profile photo">
+          <img src="_images/member-1.jpg" alt="Member 1 profile photo">
           <div class="recent-activity-item">
             <p>Victoria Chambers commented on YourApp's SEO Tips</p>
             <p>4 hours ago</p>
@@ -214,7 +217,7 @@
         </div>
 
         <div class="members-container">
-          <img src="_images/images/member-2.jpg" alt="Member 2 profile photo">
+          <img src="_images/member-2.jpg" alt="Member 2 profile photo">
           <div class="recent-activity-item">
             <p>Dale Byrd liked the post Facebook's Changes for 2016</p>
             <p>5 hours ago</p>
@@ -222,7 +225,7 @@
         </div>
 
         <div class="members-container">
-          <img src="_images/images/member-3.jpg" alt="Member 3 profile photo">
+          <img src="_images/member-3.jpg" alt="Member 3 profile photo">
           <div class="recent-activity-item">
             <p>Dawn Wood commented on Facebook's Changes for 2016</p>
             <p>5 hours ago</p>
@@ -230,7 +233,7 @@
         </div>
 
         <div class="members-container">
-          <img src="_images/images/member-4.jpg" alt="Member 4 profile photo">
+          <img src="_images/member-4.jpg" alt="Member 4 profile photo">
           <div class="recent-activity-item">
             <p>Dan Oliver posted YourApp's SEO Tips</p>
             <p>1 day ago</p>
@@ -255,7 +258,7 @@
           <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
           <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
           <option value="-10:00">(GMT -10:00) Hawaii</option>
-          <option value="-09:50">(GMT -9:30) Taiohae</option>
+          <option value="-09:30">(GMT -9:30) Taiohae</option>
           <option value="-09:00">(GMT -9:00) Alaska</option>
           <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
           <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
@@ -263,7 +266,7 @@
           <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
           <option value="-04:50">(GMT -4:30) Caracas</option>
           <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
-          <option value="-03:50">(GMT -3:30) Newfoundland</option>
+          <option value="-03:30">(GMT -3:30) Newfoundland</option>
           <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
           <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
           <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
@@ -271,25 +274,25 @@
           <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
           <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
           <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
-          <option value="+03:50">(GMT +3:30) Tehran</option>
+          <option value="+03:30">(GMT +3:30) Tehran</option>
           <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
-          <option value="+04:50">(GMT +4:30) Kabul</option>
+          <option value="+04:30">(GMT +4:30) Kabul</option>
           <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
           <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
-          <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+          <option value="+05:45">(GMT +5:45) Kathmandu, Pokhara</option>
           <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
-          <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+          <option value="+06:30">(GMT +6:30) Yangon, Mandalay</option>
           <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
           <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
-          <option value="+08:75">(GMT +8:45) Eucla</option>
+          <option value="+08:45">(GMT +8:45) Eucla</option>
           <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
-          <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+          <option value="+09:30">(GMT +9:30) Adelaide, Darwin</option>
           <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
           <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
           <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
-          <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+          <option value="+11:30">(GMT +11:30) Norfolk Island</option>
           <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
-          <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+          <option value="+12:45">(GMT +12:45) Chatham Islands</option>
           <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
           <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
         </select>
